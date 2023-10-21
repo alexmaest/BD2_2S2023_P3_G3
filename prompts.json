@@ -1,0 +1,29 @@
+// Movies CREATE
+{
+    "Id": 1,
+    "Titulo": "título de la película",
+    "Director": "director de la película",
+    "FechaDeEstreno": "2023-10-31",
+    "IdiomaOriginal": "idioma original",
+    "Distribuidora": "distribuidora",
+    "Descripcion": "descripción de la película",
+    "Precio": 15.99,
+    "Genero": "género de la película",
+    "Clasificacion": "B",
+    "Calificacion": 4.5
+}
+
+// Movies UPDATE
+{
+    "Id": 1,
+    "Titulo": "Nuevo título de la película",
+    "Director": "Nuevo director de la película",
+    "FechaDeEstreno": "2023-10-31",
+    "IdiomaOriginal": "Nuevo idioma original",
+    "Distribuidora": "Nueva distribuidora",
+    "Descripcion": "Nueva descripción de la película",
+    "Precio": 15.99,
+    "Genero": "Nuevo género de la película",
+    "Clasificacion": "B",
+    "Calificacion": 4.5
+}
