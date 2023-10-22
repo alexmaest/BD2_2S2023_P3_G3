@@ -13,5 +13,10 @@ router.get('/genre/:genero', moviesController.findByGenre);
 router.get('/clasification/:clasificacion', moviesController.findByClasification);
 router.get('/director/:director', moviesController.findByDirector);
 router.get('/price/:precio', moviesController.findByPrice);
+router.get('/year/:year', moviesController.findByYear);
+router.get('/topDirector', moviesController.topDirectors);
+router.get('/search/:keyword', moviesController.searchMovies);
+router.get('/avgPrice', moviesController.averageMoviePrice);
+router.get('/mejorCalificacion', moviesController.topRatedMovies);
 
 module.exports = router;
