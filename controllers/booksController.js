@@ -264,6 +264,119 @@ class booksController {
       res.status(500).send(err)
     }
   }
+
+  async topExpensiveAuthors(req, res) {
+    try {
+      const client = new MongoClient(uri);
+      await client.connect();
+      console.log('Conexión a MongoDB establecida correctamente');
+  
+      const database = client.db('practica3');
+      const books = database.collection('books');
+  
+      const aggregationPipeline = [
+        {
+          $group: {
+            _id: "$Autor",
+            totalPrice: { $sum: { $convert: { input: "$Precio", to: "double", onError: 0, onNull: 0 } } }
+          }
+        },
+        {
+          $sort: { totalPrice: -1 }
+        },
+        {
+          $limit: 10
+        }
+      ];
+  
+      const authorsList = await books.aggregate(aggregationPipeline).toArray();
+      res.status(200).send(authorsList);
+    } catch (err) {
+      console.error('Error de conexión a MongoDB:', err);
+      res.status(500).send(err);
+    }
+  }
+  
+  async getStockForBook(req, res) {
+    try {
+      const client = new MongoClient(uri);
+      await client.connect();
+      console.log('Conexión a MongoDB establecida correctamente');
+  
+      const database = client.db('practica3');
+      const books = database.collection('books');
+  
+      const { title } = req.params;
+  
+      const query = { Titulo: title };
+  
+      const book = await books.findOne(query);
+  
+      if (book) {
+        res.status(200).send({ stock: book.Stock });
+      } else {
+        res.status(404).send({ message: 'Libro no encontrado' });
+      }
+    } catch (err) {
+      console.error('Error de conexión a MongoDB:', err);
+      res.status(500).send(err);
+    }
+  }
+
+  async averagePrice(req, res) {
+    try {
+      const client = new MongoClient(uri);
+      await client.connect();
+      console.log('Conexión a MongoDB establecida correctamente');
+  
+      const database = client.db('practica3');
+      const books = database.collection('books');
+  
+      const aggregationPipeline = [
+        {
+          $group: {
+            _id: null,
+            averagePrice: { $avg: { $convert: { input: "$Precio", to: "double", onError: 0, onNull: 0 } } }
+          }
+        }
+      ];
+  
+      const result = await books.aggregate(aggregationPipeline).toArray();
+      const averagePrice = result.length > 0 ? result[0].averagePrice : 0;
+  
+      res.status(200).send({ averagePrice });
+    } catch (err) {
+      console.error('Error de conexión a MongoDB:', err);
+      res.status(500).send(err);
+    }
+  }  
+
+  async getAllCategories(req, res) {
+    try {
+      const client = new MongoClient(uri);
+      await client.connect();
+      console.log('Conexión a MongoDB establecida correctamente');
+  
+      const database = client.db('practica3');
+      const books = database.collection('books');
+  
+      const aggregationPipeline = [
+        {
+          $group: {
+            _id: "$Categoria",
+            totalBooks: { $sum: 1 }
+          }
+        }
+      ];
+  
+      const categoriesList = await books.aggregate(aggregationPipeline).toArray();
+      res.status(200).send(categoriesList);
+    } catch (err) {
+      console.error('Error de conexión a MongoDB:', err);
+      res.status(500).send(err);
+    }
+  }
+  
 }
 
 module.exports = new booksController();

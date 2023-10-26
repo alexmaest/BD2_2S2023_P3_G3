@@ -1,21 +1,21 @@
-Titulo,Autor,Descripcion,FechaDePublicacion,Calificacion,Stock,Categoria
-Matar a un ruiseñor,Harper Lee,La novela clásica ganadora del Pulitzer,1960-07-11,5,50,Ficción
-Cien años de soledad,Gabriel García Márquez,Una obra maestra del realismo mágico,1967-05-30,5,75,Ficción
-1984,George Orwell,Una visión distópica del futuro,1949-06-08,4,60,Ficción
-El Gran Gatsby,F Scott Fitzgerald,La historia de la alta sociedad en la década de 1920,1925-04-10,4,40,Ficción
-Matar a un elefante,George Orwell,Un ensayo sobre la experiencia del autor en Birmania,1936-11-12,3,30,No Ficción
-En el camino,Jack Kerouac,La novela que definió la Generación Beat,1957-09-05,4,45,Ficción
-Mujer en punto cero,Nawal El Saadawi,La historia de una prisionera egipcia,1975-03-01,4,20,Ficción
-El camino,Jack London,Una historia de aventuras en el Yukón,1903-09-12,4,55,Ficción
-Crimen y castigo,Fyodor Dostoevsky,La lucha de un estudiante contra la moralidad,1866-01-12,5,35,Ficción
-Orgullo y prejuicio,Jane Austen,Una historia de amor y prejuicio en la Inglaterra del siglo XIX,1813-01-28,5,70,Ficción
-Don Quijote de la Mancha,Miguel de Cervantes Saavedra,La aventura de un caballero y su fiel escudero,1605-01-16,5,90,Ficción
-Ulises,James Joyce,Un recorrido literario por un día en la vida de Leopold Bloom,1922-02-02,4,60,Ficción
-Matar a un mirlo dorado,Harper Lee,La secuela del clásico Matar a un ruiseñor,2015-07-14,4,40,Ficción
-Los juegos del hambre,Suzanne Collins,Un futuro distópico de lucha por la supervivencia,2008-09-14,4,55,Ficción
-Rayuela,Julio Cortázar,Una novela experimental en la que el lector elige su propia lectura,1963-06-03,5,30,Ficción
-El nombre de la rosa,Umberto Eco,Un misterio en una abadía medieval,1980-09-29,5,35,Ficción
-Código Da Vinci,Dan Brown,Una conspiración que podría cambiar la historia del cristianismo,2003-03-18,3,65,Ficción
-Los hombres me explican cosas,Rebecca Solnit,Ensayos feministas sobre la experiencia de las mujeres,2014-05-10,5,40,No Ficción
-Sapiens: De animales a dioses,Yuval Noah Harari,Una historia de la humanidad,2011-02-10,5,75,No Ficción
-Breve historia del tiempo,Stephen Hawking,La explicación del universo para todos,1988-04-01,4,25,No Ficción
+Titulo,Autor,Descripcion,FechaDePublicacion,Calificacion,Stock,Categoria,Precio
+Matar a un ruiseñor,Harper Lee,La novela clásica ganadora del Pulitzer,1960-07-11,5,50,Ficción,15.99
+Cien años de soledad,Gabriel García Márquez,Una obra maestra del realismo mágico,1967-05-30,5,75,Ficción,20.50
+1984,George Orwell,Una visión distópica del futuro,1949-06-08,4,60,Ficción,18.75
+El Gran Gatsby,F Scott Fitzgerald,La historia de la alta sociedad en la década de 1920,1925-04-10,4,40,Ficción,22.99
+Matar a un elefante,George Orwell,Un ensayo sobre la experiencia del autor en Birmania,1936-11-12,3,30,No Ficción,12.50
+En el camino,Jack Kerouac,La novela que definió la Generación Beat,1957-09-05,4,45,Ficción,16.80
+Mujer en punto cero,Nawal El Saadawi,La historia de una prisionera egipcia,1975-03-01,4,20,Ficción,14.25
+El camino,Jack London,Una historia de aventuras en el Yukón,1903-09-12,4,55,Ficción,19.30
+Crimen y castigo,Fyodor Dostoevsky,La lucha de un estudiante contra la moralidad,1866-01-12,5,35,Ficción,24.99
+Orgullo y prejuicio,Jane Austen,Una historia de amor y prejuicio en la Inglaterra del siglo XIX,1813-01-28,5,70,Ficción,21.45
+Don Quijote de la Mancha,Miguel de Cervantes Saavedra,La aventura de un caballero y su fiel escudero,1605-01-16,5,90,Ficción,28.75
+Ulises,James Joyce,Un recorrido literario por un día en la vida de Leopold Bloom,1922-02-02,4,60,Ficción,26.00
+Matar a un mirlo dorado,Harper Lee,La secuela del clásico Matar a un ruiseñor,2015-07-14,4,40,Ficción,17.50
+Los juegos del hambre,Suzanne Collins,Un futuro distópico de lucha por la supervivencia,2008-09-14,4,55,Ficción,23.20
+Rayuela,Julio Cortázar,Una novela experimental en la que el lector elige su propia lectura,1963-06-03,5,30,Ficción,20.00
+El nombre de la rosa,Umberto Eco,Un misterio en una abadía medieval,1980-09-29,5,35,Ficción,25.50
+Código Da Vinci,Dan Brown,Una conspiración que podría cambiar la historia del cristianismo,2003-03-18,3,65,Ficción,22.75
+Los hombres me explican cosas,Rebecca Solnit,Ensayos feministas sobre la experiencia de las mujeres,2014-05-10,5,40,No Ficción,15.60
+Sapiens: De animales a dioses,Yuval Noah Harari,Una historia de la humanidad,2011-02-10,5,75,No Ficción,19.99
+Breve historia del tiempo,Stephen Hawking,La explicación del universo para todos,1988-04-01,4,25,No Ficción,18.25

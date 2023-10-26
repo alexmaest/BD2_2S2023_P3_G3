@@ -16,5 +16,9 @@ router.get('/author/:author', booksController.findByAuthor);
 router.get('/averageRatingSort', booksController.averageRatingSort);
 router.get('/priceLowerThan20', booksController.priceLowerThan20);
 router.get('/titleAndDescriptionKeyword/:keyword', booksController.titleAndDescriptionKeyword);
+router.get('/toExpensiveAuthors', booksController.topExpensiveAuthors);
+router.get('/getStockForBook/:title', booksController.getStockForBook);
+router.get('/averagePrice', booksController.averagePrice);
+router.get('/getAllCategories', booksController.getAllCategories);
 
 module.exports = router;
